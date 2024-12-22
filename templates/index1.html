@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of my Page</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='1.jpeg') }}" alt="">
+    {% for user in users %}
+        <li><a href="{{user.url}}">{{user.username}}</a></li>
+    {% endfor %}
+
+    <p>In this video, I have shown you how to create flask app using templates. I have used render template function from the flask module</p>
+    <p>Hope you will like this video</p>
+</body>
+</html>
